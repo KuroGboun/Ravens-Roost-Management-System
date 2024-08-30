@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+body.firstpage {
+    width: 100%;
+    /* Makes the image take up 100% of the container's width */
+    height: auto;
+    /* Maintains the aspect ratio */
+    max-width: 6000px;
+    overflow: hidden;
+    /* Prevent scrolling */
+
+}
+
+
+nav img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
+}
+
+.centered-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* Adjust color as needed */
+    font-size: 4em;
+    /* Adjust font size as needed */
+    z-index: 1;
+    /* Ensure the text is above other elements */
+    white-space: nowrap;
+}
+
+.culogo {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button-container {
+    position: fixed;
+    top: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    /* Ensure the button is above other elements */
+}
+
+#button {
+
+    font-size: 2.5em;
+    background: none;
+    color: white;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+
+/* button:hover {
+    //;
+} */
+
+.logo1 {
+    width: 30%;
+    height: auto;
+}
+
+.logo {
+    left: 0;
+    z-index: 1000;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /* Ensure it responds to left property */
+
+}
+
+body.page2 {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+header.page2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
+
+.navbar a {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+
+
+}
+
+.card1 {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+
+}
+
+.poo {
+    width: 75%;
+    height: auto;
+}
+
+.tt {
+    width: 100%;
+    height: auto;
+}
+
+.xb {
+    width: 60%;
+    height: auto;
+    padding-top: 20px;
+
+}
+
+.xb-tex {
+    padding-top: 10px;
+}
+
+.bb {
+    width: 75%;
+    height: auto;
+}
+
+.ch {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+.uno {
+    width: 70%;
+    height: auto;
+
+}
+
+.jengo {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+
+
+}
+
+.switch-tex {
+    padding-top: 10px;
+}
+
+.jen-tex {
+    padding-top: 15px;
+
+}
+
+.tittle {
+    padding-top: 30px;
+    display: center;
+    padding-left: 15%;
+    text-align: left;
+    font-size: 30px;
+}
+
+.gam {
+    display: center;
+    padding-left: 15%;
+    text-align: left;
+    font-size: 30px;
+
+}
+
+.equip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* aliceblue with 50% opacity */
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 750px;
+    height: 520px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: #000000;
+    font-size: 25px;
+    font: weight 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+#popup-description {
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+#submit {
+    margin-top: 10px;
+    /* https://codepen.io/dhanishgajjar/pen/OgYdzR
+    submit button css */
+}
+
+
+
+.tada {
+    margin: 20px 10px;
+}
+
+.udon {
+    text-decoration: underline;
+
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    margin: -10px 50px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.bdata-table {
+    width: 100%;
+    border-collapse: separate;
+    margin: -10px 50px;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 80px;
+}
